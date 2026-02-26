@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#header-left,
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header ul {
+    display: flex;
+    gap: 16px;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+header a:hover {
+    background: #333;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup-btn {
+    background: white;
+    color: black;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.hero-box {
+    width: 50%;
+}
+
+#hero-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#hero-section-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.offer {
+    color: #2e7d32;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ededed;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+.mid-hero{
+width: 0px;
+height: 50px;
+border: .5px solid black;
+position: absolute;
+top: 461px;
+left: 100px;
+
+}
+.primary-button {
+    background: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+.secondary-button {
+    background: #e5e5e5;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+#hero-section-right img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#sug-section {
+    padding: 80px;
+}
+
+#sub-super-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sug-box {
+    width: 420px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sug-box img {
+    width: 120px;
+}
+
+.sug-box button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    header ul,
+    nav ul,
+    #hero-section-right {
+        display: none;
+    }
+
+    header,
+    nav,
+    #hero-section,
+    #sug-section {
+        padding: 20px;
+    }
+
+    #hero-section {
+        flex-direction: column;
+    }
+
+    .hero-box {
+        width: 100%;
+    }
+}
+#plan-section{
+margin-top: 80px;
+}
+
+#plan-main{
+width: 90vw;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+}
+.bottom-main-plan{
+display: flex;
+align-items: center;
+gap: 40px;
+
+}
+.left-plan{
+background-color: #9DCDD6;
+width: calc(100%-334);
+display: flex;
+height: 600px;
+border-radius: 20px;
+position: relative;
+top: 0px;
+}
+.left-sub-plan{
+padding:20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+z-index: 1;
+width: 70%;
+}
+.left-plan img{
+position: absolute;
+bottom: 0px;
+right: 0px;
+}
+.left-sub-plan>h1{
+font-size: 40px;
+}
+.time-date-plan{
+display: flex;
+gap: 20px;
+}
+.time-date-plan>div>input{
+padding: 8px 20px;
+}
+.right-plan{
+width:400px;
+height: 350px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding:10px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+border-radius: 10px;
+
+}
+.right-plan>a{
+color: #6B6B6B;
+text-decoration: underline dotted;
+text-underline-offset: 15px;
+}
+
+.p-under{
+width: 100%;
+}
+.plan-benefits{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+footer{
+background-color: #000000;
+display: flex;
+justify-content: center;
+margin-top: 80px;
+}
+
+.main-footer{
+width: 80vw;
+display: flex;
+flex-direction: column;
+margin: 80px 0px;
+gap: 40px;
+}
+#footer-logo{
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+#footer-logo p{
+color: white;
+font-weight: 400;
+font-size: 30px;
+}
+
+#footer-logo a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+#footer-nav{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap:40px;
+}
+.footer-nav-box{
+width: 200px;
+}
+#footer-nav h4{
+color: white;
+margin-bottom: 20px;
+
+}
+#footer-nav a{
+text-decoration: none;
+color: white;
+}
+#footer-nav a:hover{
+color: #DCDCDC;
+transition: a .3s ease;
+}
+#footer-nav ul>li{
+list-style: none;
+}
+#footer-nav ul{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+#footer-so {
+display: flex;
+justify-content: space-between;
+}
+#footer-so ul{
+display: flex;
+gap: 20px;
+}
+#footer-so ul>li{
+list-style: none;
+}
+#footer-so a{
+text-decoration: none;
+color: white;
+font-size: 25px;
+padding: 5px 8px;
+border-radius: 10px;
+}
+#footer-so a:hover{
+    background-color: #6b6b6b53;
+
+}
+#footer-app {
+display: flex;
+gap: 40px;
+align-items: center;
+}
+#footer-app img{
+width: 200px;
+}
+
+#footer-priv{
+display: flex;
+justify-content: space-between;
+
+}
+#footer-priv p{
+color: #6B6B6B;
+}
+
+#footer-priv ul{
+display: flex;
+gap: 20px;
+}
+#footer-priv a{
+text-decoration: none;
+color: #6B6B6B;
+}
+#footer-priv ul>li{
+list-style: none;
+}
+#footer-priv a:hover{
+color: white;
+transition: a .3s ease;
+}
+
+@media screen and (max-width:1134px) {
+#header-left>ul{
+display: none;
+}
+#header-right>ul{
+display: none;
+}
+nav>ul{
+display: none;
+}
+#hero-section{
+flex-direction: column;
+margin-left: 80px;
+}
+#hero-section-right{
+display: none;
+
+}
+#hero-section-hide{
+display: block;
+}
+.bottom-main-plan{
+flex-direction: column;
+}
+.right-plan{
+width: 100%;
+height: 250px;
+padding: 20px;
+}
+.left-plan{
+z-index: 1;
+}
+}
